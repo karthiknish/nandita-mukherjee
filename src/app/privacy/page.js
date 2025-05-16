@@ -7,8 +7,8 @@ export default function PrivacyPage() {
         </h1>
         <p className="mb-4 text-lg">
           Your privacy is important to us. This page explains how we collect,
-          use, and protect your information at Nandita Mukherjee's Harmonium
-          Academy.
+          use, and protect your information at Nandita Mukherjee&apos;s
+          Harmonium Academy.
         </p>
         <h2 className="text-xl font-semibold mt-6 mb-2 text-primary">
           What We Collect

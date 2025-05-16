@@ -6,7 +6,7 @@ export default function TermsPage() {
           Terms &amp; Conditions
         </h1>
         <p className="mb-4 text-lg">
-          Welcome to Nandita Mukherjee's Harmonium Academy. By using this
+          Welcome to Nandita Mukherjee&apos;s Harmonium Academy. By using this
           website or booking lessons, you agree to the following terms and
           conditions.
         </p>

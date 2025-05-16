@@ -102,9 +102,9 @@ function HeroSection() {
         harmonium.
       </p>
       <blockquote className="italic text-muted-foreground border-l-4 border-primary pl-4 mb-4 font-sans">
-        "Music gives life to everything. It is my sincerest wish to share this
-        gift with you, so you may experience music in a more profound and joyful
-        way than ever before."
+        &quot;Music gives life to everything. It is my sincerest wish to share
+        this gift with you, so you may experience music in a more profound and
+        joyful way than ever before.&quot;
       </blockquote>
       <p className="text-base md:text-lg font-sans">
         Welcome to my academy. I hope you enjoy what you find here, and please
