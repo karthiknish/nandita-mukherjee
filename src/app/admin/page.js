@@ -163,7 +163,7 @@ export default function AdminPage() {
           Admin Login
         </h1>
         <p className="text-center text-slate-500 mb-6">
-          Access to Nandita Mukherjee's site submissions.
+          Access to Nandita Mukherjee&apos;s site submissions.
         </p>
         <form onSubmit={handleLogin} className="space-y-6">
           <div>

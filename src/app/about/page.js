@@ -97,7 +97,9 @@ export default function AboutPage() {
                   <motion.p variants={itemVariant} className="mb-4 text-lg">
                     Her musical contributions include performances at events
                     such as{" "}
-                    <span className="italic">"Bengal to Bethnal Green"</span>{" "}
+                    <span className="italic">
+                      &quot;Bengal to Bethnal Green&quot;
+                    </span>{" "}
                     presented by the Grand Union Orchestra at Rich Mix London.
                   </motion.p>
 
