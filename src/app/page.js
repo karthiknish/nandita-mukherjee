@@ -170,13 +170,13 @@ function HeroSection() {
             variants={itemVariant}
           >
             <a
-              href="#contact"
+              href="/contact"
               className="inline-flex items-center justify-center px-8 py-3 bg-gradient-to-r from-purple-600 to-indigo-600 text-white font-semibold rounded-full shadow-lg hover:shadow-xl hover:from-purple-700 hover:to-indigo-700 transform hover:scale-105 transition-all duration-300 text-lg"
             >
               Get in Touch
             </a>
             <a
-              href="#teaching"
+              href="/lessons"
               className="inline-flex items-center justify-center px-8 py-3 bg-white text-purple-700 font-semibold rounded-full shadow-md hover:shadow-lg hover:bg-purple-50 border border-purple-200 hover:border-purple-300 transform hover:scale-105 transition-all duration-300 text-lg"
             >
               Explore Lessons
