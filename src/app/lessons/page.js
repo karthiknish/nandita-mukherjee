@@ -183,16 +183,17 @@ export default function LessonsPage() {
           </h2>
           <div className="space-y-8">
             <blockquote className="bg-pink-50/80 backdrop-blur-sm border-l-4 border-fuchsia-500 p-6 rounded-lg shadow-lg text-gray-700 italic text-left">
-              "Learning Rabindra Sangeet with Nandita has been a transformative
-              experience. Her passion and patience make every lesson a joy!"
+              &quot;Learning Rabindra Sangeet with Nandita has been a
+              transformative experience. Her passion and patience make every
+              lesson a joy!&quot;
               <br />
               <span className="block mt-3 text-base font-semibold text-primary not-italic">
                 — Student, London
               </span>
             </blockquote>
             <blockquote className="bg-pink-50/80 backdrop-blur-sm border-l-4 border-fuchsia-500 p-6 rounded-lg shadow-lg text-gray-700 italic text-left">
-              "Nandita&apos;s harmonium classes are both inspiring and fun. She
-              brings out the best in her students."
+              &quot;Nandita&apos;s harmonium classes are both inspiring and fun.
+              She brings out the best in her students.&quot;
               <br />
               <span className="block mt-3 text-base font-semibold text-primary not-italic">
                 — Parent of a young student
