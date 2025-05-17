@@ -7,9 +7,6 @@ const navLinks = [
   { href: "/", label: "Home" },
   { href: "/about", label: "About" },
   { href: "/lessons", label: "Lessons" },
-  { href: "/gallery/photos", label: "Photo Gallery" },
-  { href: "/gallery/videos", label: "Video Gallery" },
-  { href: "/blog", label: "Blog" },
   { href: "/contact", label: "Contact" },
 ];
 
@@ -70,7 +67,7 @@ export default function Navbar() {
               }`}
             >
               <div className="flex items-center justify-between px-6 py-4 border-b border-yellow-400">
-                <span className="text-lg font-bold">Harmonium Academy</span>
+                <span className="text-lg font-bold">Nadita Mukherjee</span>
                 <button
                   className="text-white hover:text-yellow-400"
                   aria-label="Close menu"
