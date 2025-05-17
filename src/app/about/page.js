@@ -90,7 +90,7 @@ export default function AboutPage() {
               Nandita has been deeply immersed in the world of Tagore music
               since her childhood. This lifelong dedication has established her
               as a prominent and respected practitioner and performer within the
-              UK's vibrant cultural landscape.
+              UK&apos;s vibrant cultural landscape.
             </p>
           </div>
         </motion.section>
@@ -155,7 +155,7 @@ export default function AboutPage() {
               Notable Performances
             </h2>
             <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
-              Nandita's musical contributions have graced various esteemed
+              Nandita&apos;s musical contributions have graced various esteemed
               platforms. A notable highlight includes her performance at the{" "}
               <span className="italic text-secondary">
                 &quot;Bengal to Bethnal Green&quot;
@@ -195,7 +195,7 @@ export default function AboutPage() {
               Listen & Explore Her Music
             </h2>
             <p className="text-lg md:text-xl text-gray-700 leading-relaxed mb-3">
-              Discover more of Nandita's enchanting music and performances
+              Discover more of Nandita&apos;s enchanting music and performances
               through her online presence:
             </p>
             <ul className="list-none space-y-3 pl-0 md:pl-4">
@@ -262,7 +262,7 @@ export default function AboutPage() {
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <p className="text-md md:text-lg text-gray-600 leading-relaxed italic pt-6 border-t border-primary/30">
               For a deeper dive into her extensive repertoire, explore Nandita
-              Mukherjee's recordings on SoundCloud and YouTube. There, she
+              Mukherjee&apos;s recordings on SoundCloud and YouTube. There, she
               shares a rich variety of Tagore songs and other captivating
               musical pieces, offering a testament to her artistry and passion.
             </p>

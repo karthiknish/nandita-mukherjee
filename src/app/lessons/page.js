@@ -38,8 +38,8 @@ export default function LessonsPage() {
             <div className="md:w-3/5 lg:w-1/2">
               {/* Removed h2 from here as it's introductory text */}
               <p className="mb-6 text-lg leading-relaxed">
-                If you're seeking music lessons for yourself or your child,
-                you've come to the right place!
+                If you&apos;re seeking music lessons for yourself or your child,
+                you&apos;ve come to the right place!
                 <br />
                 <br />
                 <span className="font-semibold text-primary">
@@ -113,15 +113,16 @@ export default function LessonsPage() {
             <div className="md:w-3/5 lg:w-1/2">
               <h2 className="text-2xl md:text-3xl font-bold mb-6 text-primary flex items-center">
                 <Lightbulb className="w-7 h-7 mr-3 opacity-90" />
-                Nandita's Teaching Philosophy
+                Nandita&apos;s Teaching Philosophy
               </h2>
               <p className="text-lg text-gray-800 leading-relaxed">
                 Nandita believes that learning music should be a joyful,
                 life-enriching experience. Her teaching is rooted in tradition
-                but tailored to each student's pace, interests, and goals.
+                but tailored to each student&apos;s pace, interests, and goals.
                 Whether you are a complete beginner or an advanced student,
-                Nandita's lessons are designed to engage both heart and mind,
-                fostering creativity, confidence, and a deep love for music.
+                Nandita&apos;s lessons are designed to engage both heart and
+                mind, fostering creativity, confidence, and a deep love for
+                music.
               </p>
             </div>
             <div className="md:w-2/5 lg:w-1/2 flex justify-center items-center mt-6 md:mt-0">
@@ -190,7 +191,7 @@ export default function LessonsPage() {
               </span>
             </blockquote>
             <blockquote className="bg-pink-50/80 backdrop-blur-sm border-l-4 border-fuchsia-500 p-6 rounded-lg shadow-lg text-gray-700 italic text-left">
-              "Nandita's harmonium classes are both inspiring and fun. She
+              "Nandita&apos;s harmonium classes are both inspiring and fun. She
               brings out the best in her students."
               <br />
               <span className="block mt-3 text-base font-semibold text-primary not-italic">
