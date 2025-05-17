@@ -345,11 +345,35 @@ export default function HomePage() {
   return (
     <>
       <Head>
-        <title>Nandita Mukherjee - Harmonium Player & Teacher</title>
+        <title>
+          Nandita Mukherjee | Harmonium, Rabindra Sangeet & Indian Music in
+          London
+        </title>
         <meta
           name="description"
-          content="Welcome to the official website of Nandita Mukherjee, professional harmonium player, teacher, and composer."
+          content="Welcome to the official website of Nandita Mukherjee, London-based harmonium player, vocalist, and teacher specializing in Rabindra Sangeet and Indian classical music."
         />
+        <meta
+          property="og:title"
+          content="Nandita Mukherjee | Harmonium, Rabindra Sangeet & Indian Music in London"
+        />
+        <meta
+          property="og:description"
+          content="Welcome to the official website of Nandita Mukherjee, London-based harmonium player, vocalist, and teacher specializing in Rabindra Sangeet and Indian classical music."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://yourdomain.com/" />
+        <meta property="og:image" content="/images/nandita-og.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="Nandita Mukherjee | Harmonium, Rabindra Sangeet & Indian Music in London"
+        />
+        <meta
+          name="twitter:description"
+          content="Welcome to the official website of Nandita Mukherjee, London-based harmonium player, vocalist, and teacher specializing in Rabindra Sangeet and Indian classical music."
+        />
+        <meta name="twitter:image" content="/images/nandita-og.jpg" />
         <link
           href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap"
           rel="stylesheet"
