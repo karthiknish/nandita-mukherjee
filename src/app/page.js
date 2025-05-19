@@ -103,7 +103,7 @@ function HeroSection() {
               className="w-60 h-60 md:w-72 md:h-72 lg:w-80 lg:h-80 rounded-full object-cover shadow-xl group-hover:shadow-2xl border-4 border-white/60 ring-2 ring-purple-300 group-hover:ring-purple-500 transition-all duration-300 transform group-hover:scale-105"
             />
             <span className="absolute -bottom-4 left-1/2 -translate-x-1/2 bg-gradient-to-r from-purple-600 to-indigo-600 text-white px-6 py-2 rounded-full text-sm font-medium shadow-lg group-hover:from-purple-700 group-hover:to-indigo-700 transform group-hover:scale-105 transition-all duration-300 tracking-wider">
-              Harmonium Maestro
+              Musical Maestro
             </span>
           </div>
           <motion.div
@@ -136,7 +136,7 @@ function HeroSection() {
             </span>
             Nandita Mukherjee
             <span className="block text-xl md:text-2xl font-medium text-purple-500 mt-3 tracking-wide">
-              Harmonium Artist &amp; Educator
+              Musical Artist &amp; Educator
             </span>
           </motion.h1>
 
@@ -146,8 +146,8 @@ function HeroSection() {
           >
             With roots in a family of musicians, I&apos;ve dedicated my life to
             sharing the beauty and depth of Indian classical music through the
-            harmonium. As a performer, teacher, and composer, I invite you to
-            explore, learn, and experience the transformative power of music.
+            harmonium. As a performer, teacher, I invite you to explore, learn,
+            and experience the transformative power of music.
           </motion.p>
 
           <motion.blockquote
@@ -328,7 +328,7 @@ function TeachingSection() {
 
 function YouTubeSection() {
   const videos = ["-iOaLXntkVI", "x1TL3JbZnXw", "ab4SLvDvO44", "HiCWQQrr59g"];
-  const channelUrl = "https://www.youtube.com/@nanditamukherjee";
+  const channelUrl = "https://www.youtube.com/@nanditamukherjee515";
 
   return (
     <Section bg="bg-gradient-to-br from-indigo-50 via-pink-100 to-yellow-100">

@@ -184,7 +184,7 @@ export default function AboutPage() {
                 Nandita&apos;s musical contributions have graced various
                 esteemed platforms. A notable highlight includes her performance
                 at the{" "}
-                <span className="italic text-secondary">
+                <span className="italic">
                   &quot;Bengal to Bethnal Green&quot;
                 </span>{" "}
                 event, presented by the acclaimed Grand Union Orchestra at Rich

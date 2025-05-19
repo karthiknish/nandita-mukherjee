@@ -145,6 +145,35 @@ export default function ContactPage() {
             Have a question, want to book a lesson, or just want to say hello?
             Fill out the form below and I&apos;ll get back to you soon!
           </p>
+          <div className="mt-6 text-center text-muted-foreground">
+            <h2 className="text-xl font-semibold text-primary mb-2">
+              You can also reach me directly:
+            </h2>
+            <p>
+              Phone:
+              <a
+                href="tel:07769406432"
+                className="text-indigo-600 hover:underline"
+              >
+                07769406432 {"     "}
+              </a>
+              <a
+                href="tel:07380856052"
+                className="text-indigo-600 hover:underline"
+              >
+                07380856052
+              </a>
+            </p>
+            <p>
+              Email:{" "}
+              <a
+                href="mailto:nandita@nanditamukherjee.co.uk"
+                className="text-indigo-600 hover:underline"
+              >
+                nandita@nanditamukherjee.co.uk
+              </a>
+            </p>
+          </div>
         </motion.div>
         <motion.form
           onSubmit={handleSubmit}
