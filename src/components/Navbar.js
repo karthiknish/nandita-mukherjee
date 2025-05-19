@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
-
+import Image from "next/image";
 const navLinks = [
   { href: "/", label: "Home" },
   { href: "/about", label: "About" },
@@ -14,13 +14,17 @@ export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
-    <header className="sticky top-0  z-50 w-full shadow-md border-b-2 border-yellow-400">
-      <div className="bg-gradient-to-r px-10 from-indigo-900 via-purple-900 to-indigo-800">
+    <header className="sticky top-0   z-50 w-full shadow-md border-b-2 border-yellow-400">
+      <div className="bg-gradient-to-r py-5 px-10 from-indigo-900 via-purple-900 to-indigo-800">
         <div className="container flex h-14 max-w-screen-2xl items-center justify-between">
           <Link href="/" className="mr-6 flex items-center space-x-2">
-            <span className="font-bold sm:inline-block text-white text-xl tracking-wide">
-              Nandita Mukherjee
-            </span>
+            <Image
+              src="/logo.png"
+              className="my-5"
+              alt="logo"
+              width={200}
+              height={200}
+            />
           </Link>
           {/* Desktop Navigation */}
           <nav className="hidden md:flex flex-1 items-center justify-end space-x-6">
