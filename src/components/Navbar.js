@@ -14,16 +14,16 @@ export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
-    <header className="sticky top-0   z-50 w-full shadow-md border-b-2 border-yellow-400">
-      <div className="bg-gradient-to-r py-5 px-10 from-indigo-900 via-purple-900 to-indigo-800">
+    <header className="sticky top-0  z-50 w-full shadow-md border-b-2 border-yellow-400">
+      <div className="bg-gradient-to-r py-10 px-10 from-indigo-900 via-purple-900 to-indigo-800">
         <div className="container flex h-14 max-w-screen-2xl items-center justify-between">
           <Link href="/" className="mr-6 flex items-center space-x-2">
             <Image
               src="/logo.png"
               className="my-5"
               alt="logo"
-              width={200}
-              height={200}
+              width={150}
+              height={150}
             />
           </Link>
           {/* Desktop Navigation */}
