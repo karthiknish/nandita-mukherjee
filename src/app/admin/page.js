@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import {
@@ -19,20 +19,16 @@ export default function AdminPage() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [isLoggedIn, setIsLoggedIn] = useState(
+    typeof window !== "undefined" &&
+      localStorage.getItem("isNanditaAdminLoggedIn") === "true"
+  );
 
   // State for submissions
   const [submissions, setSubmissions] = useState([]);
   const [loadingSubmissions, setLoadingSubmissions] = useState(false);
   const [fetchError, setFetchError] = useState("");
-
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      if (localStorage.getItem("isNanditaAdminLoggedIn") === "true") {
-        setIsLoggedIn(true);
-      }
-    }
-  }, []);
+  const [hasFetched, setHasFetched] = useState(false);
 
   const fetchSubmissions = async () => {
     setLoadingSubmissions(true);
@@ -42,7 +38,8 @@ export default function AdminPage() {
       const data = await response.json();
       if (data.success && Array.isArray(data.submissions)) {
         setSubmissions(data.submissions);
-        console.log("Fetched submissions:", data.submissions);
+        setHasFetched(true);
+        // console.log("Fetched submissions:", data.submissions);
       }
     } catch (err) {
       setFetchError(err.message || "An unexpected error occurred.");
@@ -51,13 +48,7 @@ export default function AdminPage() {
     }
   };
 
-  useEffect(() => {
-    if (isLoggedIn) {
-      fetchSubmissions();
-    }
-  }, [isLoggedIn]);
-
-  const handleLogin = (e) => {
+  const handleLogin = async (e) => {
     e.preventDefault();
     if (username === ADMIN_USERNAME && password === ADMIN_PASSWORD) {
       localStorage.setItem("isNanditaAdminLoggedIn", "true");
@@ -65,6 +56,7 @@ export default function AdminPage() {
       setError("");
       setUsername("");
       setPassword("");
+      await fetchSubmissions();
     } else {
       setError("Invalid username or password.");
       localStorage.removeItem("isNanditaAdminLoggedIn");
@@ -79,7 +71,19 @@ export default function AdminPage() {
     setFetchError("");
     setUsername("");
     setPassword("");
+    setHasFetched(false);
   };
+
+  // If logged in, fetch submissions on first render if not already fetched
+  if (
+    isLoggedIn &&
+    !hasFetched &&
+    !loadingSubmissions &&
+    submissions.length === 0 &&
+    !fetchError
+  ) {
+    fetchSubmissions();
+  }
 
   if (isLoggedIn) {
     return (
