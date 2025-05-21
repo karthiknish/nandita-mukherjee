@@ -480,7 +480,7 @@ export default function HomePage() {
           content="Welcome to the official website of Nandita Mukherjee, London-based harmonium player, vocalist, and teacher specializing in Rabindra Sangeet and Indian classical music."
         />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://yourdomain.com/" />
+        <meta property="og:url" content="https://nanditamukherjee.co.uk/" />
         <meta property="og:image" content="/images/nandita-og.jpg" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta
