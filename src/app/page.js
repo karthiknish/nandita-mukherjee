@@ -98,7 +98,7 @@ function HeroSection() {
         >
           <div className="relative group">
             <img
-              src="https://scontent.fmaa2-1.fna.fbcdn.net/v/t39.30808-6/344869365_959519571750371_660521640693875541_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=dR--F7Zl06MQ7kNvwH1r5ni&_nc_oc=Adl6gxMLhvMXWFOO9jQKnzqAJHSKketM1g_tMqyyZht0tb6GUS-vyEtMs9PzYwcP_25pIHXKAYloZ5w4X5ZnOekz&_nc_zt=23&_nc_ht=scontent.fmaa2-1.fna&_nc_gid=KnOrXUnx4gQ_kM6sqUkNYg&oh=00_AfIIXgfnBtDuBQwpj7iIW7h-DVzZJPzU6hl8ImYchla3Jg&oe=682E059B"
+              src="/nandita-hero.jpg"
               alt="Nandita Mukherjee"
               className="w-60 h-60 md:w-72 md:h-72 lg:w-80 lg:h-80 rounded-full object-cover shadow-xl group-hover:shadow-2xl border-4 border-white/60 ring-2 ring-purple-300 group-hover:ring-purple-500 transition-all duration-300 transform group-hover:scale-105"
             />
