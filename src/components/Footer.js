@@ -7,9 +7,9 @@ export default function Footer() {
     <footer className="bg-gradient-to-br from-indigo-900 via-purple-900 to-indigo-800 text-white py-8 ">
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 text-center md:text-left">
         <div>
-          <h3 className="font-semibold text-lg mb-2">Nadita Mukherjee</h3>
+          <h3 className="font-semibold text-lg mb-2">Nandita Mukherjee</h3>
           <p className="text-sm">
-            Dedicated to preserving and promoting the art of harmonium playing.
+            Dedicated to preserving and promoting the art of Bengali music.
           </p>
         </div>
         <div>
