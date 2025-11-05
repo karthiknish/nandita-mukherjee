@@ -37,12 +37,12 @@ export default function LessonsPage() {
     <>
       <Head>
         <title>
-          Music Lessons with Nandita Mukherjee | Harmonium & Rabindra Sangeet in
+          Music Lessons with Nandita Mukherjee | Harmonium & Rabindra Sangit in
           London
         </title>
         <meta
           name="description"
-          content="Learn harmonium, Rabindra Sangeet, and Indian classical vocal with Nandita Mukherjee in London. Online and in-person music lessons for all ages and levels."
+          content="Learn harmonium, Rabindra Sangit, and Indian classical vocal with Nandita Mukherjee in London. Online and in-person music lessons for all ages and levels."
         />
         <meta
           property="og:title"
@@ -50,7 +50,7 @@ export default function LessonsPage() {
         />
         <meta
           property="og:description"
-          content="Learn harmonium, Rabindra Sangeet, and Indian classical vocal with Nandita Mukherjee in London. Online and in-person music lessons for all ages and levels."
+          content="Learn harmonium, Rabindra Sangit, and Indian classical vocal with Nandita Mukherjee in London. Online and in-person music lessons for all ages and levels."
         />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://yourdomain.com/lessons" />
@@ -62,7 +62,7 @@ export default function LessonsPage() {
         />
         <meta
           name="twitter:description"
-          content="Learn harmonium, Rabindra Sangeet, and Indian classical vocal with Nandita Mukherjee in London. Online and in-person music lessons for all ages and levels."
+          content="Learn harmonium, Rabindra Sangit, and Indian classical vocal with Nandita Mukherjee in London. Online and in-person music lessons for all ages and levels."
         />
         <meta name="twitter:image" content="/images/nandita-og.jpg" />
       </Head>
@@ -109,9 +109,9 @@ export default function LessonsPage() {
                   <span className="font-semibold text-primary">
                     Nandita Mukherjee
                   </span>{" "}
-                  is a London-based music teacher and performer, specializing in{" "}
-                  <span className="italic">Rabindra Sangeet</span> (Tagore
-                  songs), Indian classical vocal, and harmonium. With years of
+                  is a London-based British Bangladeshi vocalist, specialising in{" "}
+                  <span className="italic">Rabindra Sangit</span> (Tagore
+                  music), Indian classical vocal, and harmonium. With years of
                   experience teaching students of all ages and backgrounds,
                   Nandita offers a nurturing, inspiring, and holistic approach
                   to music education—both online and in person.

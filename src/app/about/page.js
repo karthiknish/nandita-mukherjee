@@ -33,12 +33,12 @@ export default function AboutPage() {
         </title>
         <meta
           name="description"
-          content="Learn more about Nandita Mukherjee, a London-based vocalist and harmonium player specializing in Rabindra Sangeet and Indian classical music."
+          content="Learn more about Nandita Mukherjee, a London-based vocalist and harmonium player specialising in Rabindra Sangeet and Indian classical music."
         />
         <meta property="og:title" content="About Nandita Mukherjee" />
         <meta
           property="og:description"
-          content="Learn more about Nandita Mukherjee, a London-based vocalist and harmonium player specializing in Rabindra Sangeet and Indian classical music."
+          content="Learn more about Nandita Mukherjee, a London-based vocalist and harmonium player specialising in Rabindra Sangit and Indian classical music."
         />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://yourdomain.com/about" />
@@ -47,7 +47,7 @@ export default function AboutPage() {
         <meta name="twitter:title" content="About Nandita Mukherjee" />
         <meta
           name="twitter:description"
-          content="Learn more about Nandita Mukherjee, a London-based vocalist and harmonium player specializing in Rabindra Sangeet and Indian classical music."
+          content="Learn more about Nandita Mukherjee, a London-based vocalist and harmonium player specialising in Rabindra Sangit and Indian classical music."
         />
         <meta name="twitter:image" content="/images/nandita-og.jpg" />
       </Head>
