@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import { Facebook, Instagram, Youtube } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -19,7 +20,6 @@ export default function Footer() {
                 About
               </Link>
             </li>
-
             <li>
               <Link href="/contact" className="hover:underline">
                 Contact Us
@@ -29,21 +29,27 @@ export default function Footer() {
         </div>
         <div>
           <h3 className="font-semibold text-lg mb-2">Connect With Us</h3>
-          <ul className="space-y-1">
+          <ul className="flex items-center justify-center md:justify-start gap-4">
             {/* Replace with actual social media links/icons later */}
             <li>
-              <a href="#" className="hover:underline">
-                Facebook
+              <a
+                href="https://www.facebook.com/nandita.mukherjee.14/"
+                aria-label="Facebook"
+                className="hover:text-yellow-300 transition-colors"
+              >
+                <Facebook className="h-5 w-5" />
+                <span className="sr-only">Facebook</span>
               </a>
             </li>
+            
             <li>
-              <a href="#" className="hover:underline">
-                Instagram
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:underline">
-                YouTube
+              <a
+                href="https://www.youtube.com/@nanditamukherjee515"
+                aria-label="YouTube"
+                className="hover:text-yellow-300 transition-colors"
+              >
+                <Youtube className="h-5 w-5" />
+                <span className="sr-only">YouTube</span>
               </a>
             </li>
           </ul>
@@ -51,23 +57,14 @@ export default function Footer() {
         <div>
           <h3 className="font-semibold text-lg mb-2">Contact Details</h3>
           <ul className="space-y-1 text-sm">
-            <li>
-              Phone:
-              <a href="tel:07769406432" className="hover:underline">
-                07769406432{"   "}
-              </a>
-              <a href="tel:07380856052" className="hover:underline">
-                07380856052
-              </a>
-            </li>
-
+           
             <li>
               Email:{" "}
               <a
-                href="mailto:nandita@nanditamukherjee.co.uk"
+                href="mailto:nandita.eee@gmail.com"
                 className="hover:underline"
               >
-                nandita@nanditamukherjee.co.uk
+                nandita.eee@gmail.com
               </a>
             </li>
           </ul>

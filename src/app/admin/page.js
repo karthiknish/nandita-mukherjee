@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import {
@@ -19,10 +19,7 @@ export default function AdminPage() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
-  const [isLoggedIn, setIsLoggedIn] = useState(
-    typeof window !== "undefined" &&
-      localStorage.getItem("isNanditaAdminLoggedIn") === "true"
-  );
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   // State for submissions
   const [submissions, setSubmissions] = useState([]);
@@ -30,7 +27,7 @@ export default function AdminPage() {
   const [fetchError, setFetchError] = useState("");
   const [hasFetched, setHasFetched] = useState(false);
 
-  const fetchSubmissions = async () => {
+  const fetchSubmissions = useCallback(async () => {
     setLoadingSubmissions(true);
     setFetchError("");
     try {
@@ -46,12 +43,48 @@ export default function AdminPage() {
     } finally {
       setLoadingSubmissions(false);
     }
-  };
+  }, []);
+
+  useEffect(() => {
+    if (typeof window === "undefined") {
+      return;
+    }
+    const storage = window.localStorage;
+    if (storage && typeof storage.getItem === "function") {
+      setIsLoggedIn(storage.getItem("isNanditaAdminLoggedIn") === "true");
+    }
+  }, []);
+
+  useEffect(() => {
+    if (
+      !isLoggedIn ||
+      hasFetched ||
+      loadingSubmissions ||
+      fetchError ||
+      submissions.length > 0
+    ) {
+      return;
+    }
+    fetchSubmissions();
+  }, [
+    fetchSubmissions,
+    fetchError,
+    hasFetched,
+    isLoggedIn,
+    loadingSubmissions,
+    submissions.length,
+  ]);
 
   const handleLogin = async (e) => {
     e.preventDefault();
     if (username === ADMIN_USERNAME && password === ADMIN_PASSWORD) {
-      localStorage.setItem("isNanditaAdminLoggedIn", "true");
+      if (
+        typeof window !== "undefined" &&
+        window.localStorage &&
+        typeof window.localStorage.setItem === "function"
+      ) {
+        window.localStorage.setItem("isNanditaAdminLoggedIn", "true");
+      }
       setIsLoggedIn(true);
       setError("");
       setUsername("");
@@ -59,13 +92,25 @@ export default function AdminPage() {
       await fetchSubmissions();
     } else {
       setError("Invalid username or password.");
-      localStorage.removeItem("isNanditaAdminLoggedIn");
+      if (
+        typeof window !== "undefined" &&
+        window.localStorage &&
+        typeof window.localStorage.removeItem === "function"
+      ) {
+        window.localStorage.removeItem("isNanditaAdminLoggedIn");
+      }
       setIsLoggedIn(false);
     }
   };
 
   const handleLogout = () => {
-    localStorage.removeItem("isNanditaAdminLoggedIn");
+    if (
+      typeof window !== "undefined" &&
+      window.localStorage &&
+      typeof window.localStorage.removeItem === "function"
+    ) {
+      window.localStorage.removeItem("isNanditaAdminLoggedIn");
+    }
     setIsLoggedIn(false);
     setSubmissions([]); // Clear submissions on logout
     setFetchError("");

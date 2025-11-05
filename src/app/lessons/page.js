@@ -165,11 +165,12 @@ export default function LessonsPage() {
                 >
                   {[
                     "Harmonium Lessons (beginner to advanced)",
-                    "Rabindra Sangeet (Tagore Songs) Vocal Training",
+                    "Rabindra Sangit (Tagore Music) Vocal Training",
                     "Indian Classical & Semi-Classical Vocal Lessons",
-                    "Personalized online and in-person sessions",
+                    "Personalised online and in-person sessions",
                     "Preparation for graded music exams (if desired)",
                     "Supportive, student-centered teaching style",
+                    " Different genres of Bengali music"
                   ].map((item, index) => (
                     <motion.li
                       key={index}
@@ -254,8 +255,8 @@ export default function LessonsPage() {
                   viewport={{ once: true, amount: 0.1 }}
                 >
                   {[
-                    "Experienced performer and teacher, affiliated with SOAS University of London",
-                    "Specialist in Rabindra Sangeet and Indian harmonium",
+                    "Experienced performer and teacher, graduated from SOAS University of London",
+                    "Specialist in Rabindra Sangit and Indian harmonium",
                     "Flexible scheduling and lesson formats",
                     "Focus on both musical skill and personal growth",
                     "Warm, encouraging, and inclusive environment",
@@ -295,7 +296,7 @@ export default function LessonsPage() {
                 className="bg-pink-50/80 backdrop-blur-sm border-l-4 border-fuchsia-500 p-6 rounded-lg shadow-lg text-gray-700 italic text-left"
                 variants={itemVariant}
               >
-                &quot;Learning Rabindra Sangeet with Nandita has been a
+                &quot;Learning Rabindra Sangit with Nandita has been a
                 transformative experience. Her passion and patience make every
                 lesson a joy!&quot;
                 <br />

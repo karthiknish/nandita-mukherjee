@@ -149,28 +149,14 @@ export default function ContactPage() {
             <h2 className="text-xl font-semibold text-primary mb-2">
               You can also reach me directly:
             </h2>
-            <p>
-              Phone:
-              <a
-                href="tel:07769406432"
-                className="text-indigo-600 hover:underline"
-              >
-                07769406432 {"     "}
-              </a>
-              <a
-                href="tel:07380856052"
-                className="text-indigo-600 hover:underline"
-              >
-                07380856052
-              </a>
-            </p>
+          
             <p>
               Email:{" "}
               <a
-                href="mailto:nandita@nanditamukherjee.co.uk"
+                href="mailto:nandita.eee@gmail.com"
                 className="text-indigo-600 hover:underline"
               >
-                nandita@nanditamukherjee.co.uk
+               nandita.eee@gmail.com
               </a>
             </p>
           </div>
@@ -219,7 +205,7 @@ export default function ContactPage() {
           />
           <Button
             type="submit"
-            className="mt-4 w-full text-lg font-semibold"
+            className="mt-4 bg-primary w-full text-lg font-semibold"
             disabled={loading}
           >
             {loading ? "Sending..." : "Send Message"}

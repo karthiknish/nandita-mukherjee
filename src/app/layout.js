@@ -1,4 +1,5 @@
 import "./globals.css";
+import "@/lib/polyfills";
 import Navbar from "@/components/Navbar"; // Navbar is .js
 import Footer from "@/components/Footer"; // Footer is still .tsx
 import Head from "next/head";

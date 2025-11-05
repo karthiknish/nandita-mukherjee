@@ -187,9 +187,9 @@ function HeroSection() {
             variants={staggerParentVariant(0.2)}
           >
             {[
-              "https://scontent.fmaa2-1.fna.fbcdn.net/v/t1.6435-9/82591349_2522351934646663_7159603486206722048_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=jhzNF_9YDC8Q7kNvwF6jEej&_nc_oc=Adl5ANFLf3Z_qwlUZBLfHzunzg_PfxefgDg0m-NZPzOsfHGpKj3qBIezhGr0miP7x7DemDEk_QYNW0ml87F2vi6q&_nc_zt=23&_nc_ht=scontent.fmaa2-1.fna&_nc_gid=M2le6yHokezcXzbyLRKLlg&oh=00_AfL9-ONSLsTbVummnA4XiyF3s2M0u4CRE49pNIiMjW3HZA&oe=684FD20B",
-              "https://scontent.fmaa2-2.fna.fbcdn.net/v/t1.6435-9/96423392_1124275201269328_3135963555061301248_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_ohc=2g0NJqmvnBQQ7kNvwHQ7MD_&_nc_oc=Adnvvfiyh8BS7C8DNFStsfm-yyaGm_e4NUG5sOfKXvtmpKOF0aKBYRuLQYYr8eTbdiZ0OJZlKmgnNgU_ATuhdMdX&_nc_zt=23&_nc_ht=scontent.fmaa2-2.fna&_nc_gid=tQtpzdGzO3HNByJSNiO2VA&oh=00_AfIp61TBSt3c-mwA8fpuDeluWSItwqQs-cXzStcX6CQjNQ&oe=684FB4DB",
-              "https://scontent.fmaa2-1.fna.fbcdn.net/v/t1.6435-9/42308296_2197890030426190_2858430653953736704_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=xKjMb4TFG8kQ7kNvwHutano&_nc_oc=AdlFETxD5xffIsqa9coFWYQg-8k1F0dXPhRVOO-JxBK3eR4fCFTZzj5olCPNbA0xgyp6Gyyx85WeL0KtGRgwXo50&_nc_zt=23&_nc_ht=scontent.fmaa2-1.fna&_nc_gid=N3GqVmgTj85dH3j3k0p96w&oh=00_AfJht5p_j-qwKE0CwUDuZXmxFZFtA2vXcHalbOQDMDUm-w&oe=684FB951",
+              "/gallery1.jpeg",
+              "/gallery2.jpeg",
+              "/gallery3.jpeg",
             ].map((img, index) => (
               <motion.div
                 key={index}
@@ -314,8 +314,7 @@ function TeachingSection() {
             tailored to each student&apos;s pace and goals.
           </p>
           <p>
-            Whether you are a beginner or looking to refine your skills, I offer
-            lessons in harmonium, both online and in-person. My method is fun,
+            Whether you are a beginner or looking to refine your skills, I offer lessons in Bengali music and in harmonium, both online and in person. My method is fun,
             challenging, and deeply rewarding. If you wish to pursue music
             exams, I can prepare you for accredited graded exams and diploma
             qualifications.
@@ -327,7 +326,7 @@ function TeachingSection() {
 }
 
 function YouTubeSection() {
-  const videos = ["-iOaLXntkVI", "x1TL3JbZnXw", "ab4SLvDvO44", "HiCWQQrr59g"];
+  const videos = ["-iOaLXntkVI", "x1TL3JbZnXw", "ab4SLvDvO44", "HiCWQQrr59g", "UqFkgK9hxzQ","Z41YyTxAKgE","pieSUAd-fc4","7JX8eeFdeGU",];
   const channelUrl = "https://www.youtube.com/@nanditamukherjee515";
 
   return (
@@ -405,6 +404,9 @@ function ContactSection() {
           </p>
           <div className="mt-10">
             <motion.button
+              onClick={() => {
+                window.location.href="/contact";
+              }}
               whileHover={{ scale: 1.08, backgroundColor: "#c026d3" }}
               whileTap={{ scale: 0.97 }}
               className="inline-flex items-center gap-3 px-10 py-4 bg-fuchsia-600 text-white font-bold rounded-xl shadow-lg hover:bg-fuchsia-700 transition-colors duration-300 text-lg text-shadow"

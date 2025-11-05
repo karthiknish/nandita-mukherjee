@@ -74,7 +74,7 @@ export default function AboutPage() {
               </h1>
               <div className="flex justify-center mt-8 md:mt-10">
                 <img
-                  src="https://scontent.fmaa2-1.fna.fbcdn.net/v/t39.30808-6/274596627_3133623896852794_5400837364880614173_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=-0PUUk4cc58Q7kNvwHwm7zU&_nc_oc=Adlc3HVPRK1PlPqbphWr20A9imUZ17jZJLGdjgQmO_w_ZQ8rKJVHWVlYLt48hevq68jWi0sFURlGHukxILbRRwu0&_nc_zt=23&_nc_ht=scontent.fmaa2-1.fna&_nc_gid=KnOrXUnx4gQ_kM6sqUkNYg&oh=00_AfKMRMlxeA_Y-PCmTpS2eUGlDZ9wdGa5IgoHfP8RXEfxUA&oe=682E0962"
+                  src="/about.jpeg" // Ensure this image exists in the public/about.jpg
                   alt="Nandita Mukherjee"
                   className="rounded-full shadow-xl w-40 h-40 md:w-48 md:h-48 object-cover mx-auto border-4 border-white"
                 />
@@ -109,10 +109,10 @@ export default function AboutPage() {
                 <span className="font-semibold text-primary">
                   Nandita Mukherjee
                 </span>{" "}
-                is a distinguished London-based vocalist and harmonium player,
-                celebrated for her specialization in{" "}
-                <span className="italic font-bold">Rabindra Sangeet</span>{" "}
-                (Tagore songs). Renowned for the captivating sweetness of her
+                is a distinguished London-based British Bangladeshi vocalist and harmonium player,
+                celebrated for her specialisation in{" "}
+                <span className="italic font-bold">Rabindra Sangit</span>{" "}
+                (Tagore music). Renowned for the captivating sweetness of her
                 voice, Nandita has been deeply immersed in the world of Tagore
                 music since her childhood. This lifelong dedication has
                 established her as a prominent and respected practitioner and
@@ -146,7 +146,7 @@ export default function AboutPage() {
               </h2>
               <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
                 Beyond her captivating performances, Nandita is an accomplished
-                ethnomusicologist affiliated with the prestigious{" "}
+                ethnomusicologist graduated from the prestigious{" "}
                 <span className="font-semibold text-primary">
                   SOAS University of London
                 </span>
@@ -226,35 +226,10 @@ export default function AboutPage() {
                 performances through her online presence:
               </p>
               <ul className="list-none space-y-3 pl-0 md:pl-4">
+               
                 <li>
                   <a
-                    href="https://soundcloud.com/your-soundcloud-profile" // Replace with actual link
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center text-lg text-indigo-700 hover:text-indigo-900 hover:underline transition-colors duration-200 group"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      className="mr-2 opacity-75 group-hover:opacity-100 transition-opacity"
-                    >
-                      <path d="M9 18V5l12-2v13" />
-                      <circle cx="6" cy="18" r="3" />
-                      <circle cx="18" cy="16" r="3" />
-                    </svg>
-                    Explore on SoundCloud
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://youtube.com/your-youtube-channel" // Replace with actual link
+                    href="https://www.youtube.com/@nanditamukherjee515"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center text-lg text-indigo-700 hover:text-indigo-900 hover:underline transition-colors duration-200 group"
@@ -288,11 +263,7 @@ export default function AboutPage() {
           >
             <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
               <p className="text-md md:text-lg text-gray-600 leading-relaxed italic pt-6 border-t border-primary/30">
-                For a deeper dive into her extensive repertoire, explore Nandita
-                Mukherjee&apos;s recordings on SoundCloud and YouTube. There,
-                she shares a rich variety of Tagore songs and other captivating
-                musical pieces, offering a testament to her artistry and
-                passion.
+               For a deeper dive into her extensive repertoire, explore Nandita Mukherjee&apos;s recordings on YouTube. There, she shares a rich variety of Tagore songs, and prestigious record labels publish her captivating musical pieces, offering a testament to her artistry and passion.
               </p>
             </div>
           </motion.section>
