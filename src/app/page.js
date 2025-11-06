@@ -145,7 +145,7 @@ function HeroSection() {
             variants={itemVariant}
           >
             With roots in a family of musicians, I&apos;ve dedicated my life to
-            sharing the beauty and depth of Indian classical music through the
+            sharing the beauty and depth of Bengali music through the
             harmonium. As a performer, teacher, I invite you to explore, learn,
             and experience the transformative power of music.
           </motion.p>
@@ -268,7 +268,7 @@ function PerformanceSection() {
             I have performed with renowned artists across the globe, covering a
             wide range of musical styles from Indian classical to fusion. My
             journey has taken me to prestigious venues, radio, and television,
-            and I am passionate about bringing the harmonium&apos;s unique voice
+            and I am passionate about bringing my unique voice
             to audiences everywhere.
           </p>
         </div>
